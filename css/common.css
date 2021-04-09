@@ -1,6 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    overflow-x: hidden;
+}
+
+a{
+    display: block;
+}
+
+/* header */
+
+header .container-fluid{
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .logo-style {
@@ -15,9 +25,25 @@
 
 .btn-style {
     color: #fff;
+    border-radius: 0;
+}
+.head-bar-btn{
     background-color: #e3332b;
     border-color: #e3332b;
-    border-radius: 0;
+}
+.head-bar-btn:hover{
+    color: #fff;
+    background-color: #861d19;
+    border-color: #861d19;
+}
+.main-bar-btn{
+    background-color: #000;
+    border-color: #000;
+}
+.main-bar-btn:hover{
+    color: #fff;
+    background-color: #797474;
+    border-color: #797474;
 }
 
 .navbar-nav li a {
@@ -32,6 +58,8 @@
 .navbar-toggler {
     padding: 0.25rem 0.75rem 0.75rem 0.75rem;
 }
+
+/* Banner */
 
 #mainVision {
     background: linear-gradient(120.48deg, #232E61 0%, #050A2D 68.88%);
@@ -55,7 +83,7 @@
     left: 5%;
     top: 28%;
     z-index: 10;
-    max-width: 732px;
+    max-width: 46%;
 }
 
 #mVText span {
@@ -64,13 +92,25 @@
 }
 
 .mVTitle {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
 .mVDes {
+    font-size: 1vw;
     word-break: break-all;
 }
+
+#scroll-down{
+    border: 1.5px solid #E3332B;
+    text-align: center;
+    border-radius: 100%;
+    width: 238px;
+    height: 230px;
+    padding: 4%;
+}
+
+/* main */
 
 .block-title {
     background-color: #001D7C;
@@ -78,10 +118,12 @@
     padding: 1em;
     display: table-caption;
     margin-bottom: 3em;
+    
     position: absolute;
     z-index: 2;
     top: 14%;
-    left: 15.3%;
+    left: 14%;
+    
 }
 
 .block-title span {
@@ -89,19 +131,21 @@
 }
 
 .prd-block {
-    padding: 15% 11% 15% 11%;
+    padding: 15% 9% 15% 9%;
     position: relative;
 }
 
 .prd-vis {
     mix-blend-mode: exclusion;
-    position: absolute;
     max-width: 100%;
-    width: 140px;
-    height: 1000px;
-    top: 7%;
-    left: 11%;
+    /*width: 140px;
+    height: 100%;*/
+    
+    position: absolute;
+    top: 8%;
+    left: 10%;
     z-index: 1;
+    
 }
 
 .prd-img{

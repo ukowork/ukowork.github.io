@@ -1,3 +1,4 @@
+@import url(normalize.css);
 @import url(common.css);
 @import url(animate.css);
 @import url(xl.css); /*--- ≧1200 px ---*/
