@@ -1,0 +1,5 @@
+@import url(common.css);
+@import url(animate.css);
+@import url(xl.css); /*--- ≧1200 px ---*/
+@import url(lg.css) only screen and (min-width:992px) and (max-width:1199px);
+@import url(xs.css) only screen and (max-width:767px);

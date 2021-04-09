@@ -118,13 +118,3 @@
 .prd-text p{
     max-width: 85%;
 }
-@media only screen and (max-width: 1199px) {
-    #navbarCollapse .nav-item {
-        margin-right: 0px;
-        padding-bottom: 15px;
-    }
-
-    #navbarCollapse {
-        text-align: center;
-    }
-}
