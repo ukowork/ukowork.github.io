@@ -67,7 +67,7 @@ function scrollDown(e) {
 }
 
 function scrollUP() {
-    document.documentElement.scrollTo({
+    window.scroll({
         top: 0,
         behavior: "smooth"
     });
