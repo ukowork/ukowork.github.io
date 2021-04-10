@@ -368,3 +368,7 @@ footer {
 .flBlock ul li{
     margin-bottom: 8px;
 }
+
+.footext{
+    letter-spacing: 2px;
+}
