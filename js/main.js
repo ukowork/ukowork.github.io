@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         //
         let fastElement = $('.scroll_fast');
+        //let fastElement = document.querySelectorAll('.scroll_fast');
         //
         // https://developer.mozilla.org/zh-TW/docs/Web/API/window/requestAnimationFrame
         window.requestAnimationFrame(function () {
@@ -59,7 +60,7 @@ function scrollDown(e) {
     const href = this.getAttribute('href');
     const offsetTop = document.querySelector(href).offsetTop;
     //
-    scroll({
+    window.scroll({
         top: offsetTop,
         behavior: "smooth"
     });
@@ -69,5 +70,5 @@ function scrollUP() {
     document.documentElement.scrollTo({
         top: 0,
         behavior: "smooth"
-    })
+    });
 }
