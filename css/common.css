@@ -1,5 +1,13 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
-    overflow-x: hidden;
     font-family: 'Noto Sans', 'Noto Sans CJK TC', sans-serif;
 }
 
@@ -377,5 +385,6 @@ footer {
 }
 
 .footext{
+    display: block;
     letter-spacing: 2px;
 }

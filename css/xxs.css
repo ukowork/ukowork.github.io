@@ -1,0 +1,71 @@
+#mVcontent {
+    background-image: url(../img/ERPxs.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: top 1vh right 0vw;
+}
+
+#mVText {
+    max-width: 78%;
+}
+
+.mVTitle {
+    padding-top: 28%;
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+}
+
+.mVDes {
+    font-size: 1.1rem;
+    padding-bottom: 35%;
+}
+
+#scroll-down{
+    margin-left: 5%;
+}
+
+#prd_1 .prd-block {
+    padding: 56% 10% 10% 10%;
+}
+
+#prd_2 .prd-block {
+    padding: 56% 10% 10% 10%;
+}
+
+.block-title {
+    top: 7%;
+    left: 10%;
+}
+
+.prd-vis {
+    top: 3%;
+    left: 2%;
+}
+
+.prd-vis img {
+    width: 85px;
+}
+
+.prd-content-block .prd-text h1 {
+    font-size: 1.7rem;
+}
+
+#logoBlock .container, #footerList .container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#logoBlock .address {
+    margin-top: 30%;
+    padding-bottom: 6%;
+    font-size: 1.2rem;
+}
+
+#logoBlock p:not(.address) {
+    font-size: 1.1rem;
+}
+
+.footext {
+    font-weight: 100;
+    font-size: .5rem;
+}
