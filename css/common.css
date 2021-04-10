@@ -6,9 +6,17 @@ body {
     padding: 0px;
     overflow-x: hidden;
 }*/
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Noto Sans', 'Noto Sans CJK TC', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 a {
