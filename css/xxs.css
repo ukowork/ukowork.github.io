@@ -20,7 +20,7 @@
     padding-bottom: 35%;
 }
 
-#scroll-down{
+#scroll-down {
     margin-left: 5%;
 }
 
@@ -48,9 +48,12 @@
 
 .prd-content-block .prd-text h1 {
     font-size: 1.7rem;
+    padding-top: 6%;
+    margin-bottom: 4%;
 }
 
-#logoBlock .container, #footerList .container {
+#logoBlock .container,
+#footerList .container {
     padding-left: 5%;
     padding-right: 5%;
 }
