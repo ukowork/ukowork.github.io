@@ -1,0 +1,101 @@
+#mVcontent {
+    background-image: url(../img/ERPxs.png);
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: top 3vh right 2vw;
+}
+
+.mVTitle {
+    font-weight: 500;
+    font-size: 4rem;
+    padding-top: 14%;
+    letter-spacing: 3px;
+}
+
+.mVDes {
+    font-size: 1.2rem;
+    word-break: normal;
+    padding-top: 0;
+    letter-spacing: 1px;
+    padding-bottom: 18%;
+}
+
+.scrollBtnStyle {
+    width: 180px;
+    height: 180px;
+}
+
+#scroll-down {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+
+
+#prd_1 .prd-block {
+    padding: 28% 20% 15% 20%;
+}
+
+#prd_2 .prd-block {
+    padding: 28% 20% 10% 20%;
+}
+
+#prd_2 {
+    margin-top: 8%;
+}
+
+.block-title {
+    top: 6%;
+    left: 20%;
+}
+
+.block-title span {
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+.prd-vis {
+    top: 2%;
+    left: 10%;
+}
+
+.prd-content-block .prd-text h1{
+    font-size: 2.1rem;
+}
+
+#logoBlock .container,
+#footerList .container{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#logoBlock {
+    background: #050A2D;
+    position: relative;
+}
+
+#logoBlock span.LOGO {
+    background: #E3332B;
+    font-size: 2.38rem;
+    padding: 25px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 12px;
+}
+
+#logoBlock .address {
+    padding-top: 0%;
+    margin-top: 18%;
+    padding-bottom: 6%;
+    font-size: 1.5rem;
+}
+#logoBlock p:not(.address){
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.listTitle {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}

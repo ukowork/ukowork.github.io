@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    
+    document.querySelector('#scroll-down').addEventListener("click", scrollDown);
+    document.querySelector('#scroll-top').addEventListener("click", scrollUP);
+    
     $(window).on('scroll', function () {
         //
         let fastElement = $('.scroll_fast');
@@ -25,6 +29,7 @@ $(document).ready(function () {
         //
         // ----------------------------------------
         // 滾到相應處才撥放動畫
+        // ----------------------------------------
         let windowTop = $(window).scrollTop();
         console.log('windowTop: ' + windowTop);
         let el = ['.prd-title-block .block-title', 
@@ -46,3 +51,22 @@ $(document).ready(function () {
         }
     });
 });
+
+
+function scrollDown(e) {
+  e.preventDefault();
+  const href = this.getAttribute('href');
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+
+function scrollUP() {
+  document.documentElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}

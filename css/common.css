@@ -1,14 +1,27 @@
-body{
+body {
     overflow-x: hidden;
+    font-family: 'Noto Sans', 'Noto Sans CJK TC', sans-serif;
 }
 
-a{
+a {
     display: block;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.alwaysCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* header */
 
-header .container-fluid{
+header .container-fluid {
     padding-right: 3%;
     padding-left: 3%;
 }
@@ -16,7 +29,7 @@ header .container-fluid{
 .logo-style {
     color: #e3332b;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .navbg {
@@ -27,20 +40,24 @@ header .container-fluid{
     color: #fff;
     border-radius: 0;
 }
-.head-bar-btn{
+
+.head-bar-btn {
     background-color: #e3332b;
     border-color: #e3332b;
 }
-.head-bar-btn:hover{
+
+.head-bar-btn:hover {
     color: #fff;
     background-color: #861d19;
     border-color: #861d19;
 }
-.main-bar-btn{
+
+.main-bar-btn {
     background-color: #000;
     border-color: #000;
 }
-.main-bar-btn:hover{
+
+.main-bar-btn:hover {
     color: #fff;
     background-color: #797474;
     border-color: #797474;
@@ -52,7 +69,7 @@ header .container-fluid{
 }
 
 #navbarCollapse .nav-item {
-    margin-right: 60px;
+    margin-right: 3.75rem;
 }
 
 .navbar-toggler {
@@ -63,27 +80,31 @@ header .container-fluid{
 
 #mainVision {
     background: linear-gradient(120.48deg, #232E61 0%, #050A2D 68.88%);
+
     min-height: 750px;
     max-height: 800px;
-    position: relative;
+
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 0%;
 }
 
-#mVimg {
-    position: absolute;
-    right: 6%;
-    top: 18%;
-    z-index: 9;
-    width: 885px;
-    height: 365px;
-    max-width: 100%;
+#mVcontent {
+    background-image: url(../img/ERP.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top 7vh right 2vw;
 }
+
 
 #mVText {
-    position: absolute;
+    /*position: absolute;
     left: 5%;
     top: 28%;
-    z-index: 10;
-    max-width: 46%;
+    z-index: 10;*/
+    max-width: 68%;
+    margin-left: 7%;
 }
 
 #mVText span {
@@ -92,22 +113,71 @@ header .container-fluid{
 }
 
 .mVTitle {
-    font-size: 2.5vw;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 3rem;
+    padding-top: 14%;
+    letter-spacing: 2px;
 }
 
 .mVDes {
-    font-size: 1vw;
+    font-size: 1.3vw;
     word-break: break-all;
+    padding-top: 1%;
+    letter-spacing: 1px;
 }
 
-#scroll-down{
+.scrollBtnStyle{
     border: 1.5px solid #E3332B;
     text-align: center;
     border-radius: 100%;
-    width: 238px;
+    text-decoration: none;
+    
+    width: 230px;
     height: 230px;
-    padding: 4%;
+    
+    position: relative;
+}
+
+#scroll-down {
+    margin-top: 3%;
+    padding-top: 4%;
+}
+
+#scroll-down::after {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    height: 100vh;
+    content: '';
+    background-image: url(../img/arrow.png);
+    width: 67px;
+    height: 67px;
+
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scroll-down:hover {
+    border: 1.5px solid #E3332B;
+    background: #E3332B;
+    padding-top: 5.5%;
+}
+
+#scroll-down:hover::after {
+    top: 45%;
+    content: 'What’s the special ?';
+    color: #fff;
+    background-image: none;
+    width: 150px;
+    height: 10px;
+    font-size: 14px;
 }
 
 /* main */
@@ -115,24 +185,32 @@ header .container-fluid{
 .block-title {
     background-color: #001D7C;
     color: #fff;
-    padding: 1em;
+    padding: 16px;
     display: table-caption;
-    margin-bottom: 3em;
-    
+    margin-bottom: 48px;
+
     position: absolute;
     z-index: 2;
-    top: 14%;
-    left: 14%;
-    
+    top: 9%;
+    left: 13%;
+
 }
 
 .block-title span {
-    font-size: 1.3vw;
+    font-size: 2vw;
+    letter-spacing: 2px;
 }
 
 .prd-block {
-    padding: 15% 9% 15% 9%;
     position: relative;
+}
+
+#prd_1 .prd-block {
+    padding: 15% 10% 15% 13%;
+}
+
+#prd_2 .prd-block {
+    padding: 15% 10% 8% 13%;
 }
 
 .prd-vis {
@@ -140,25 +218,153 @@ header .container-fluid{
     max-width: 100%;
     /*width: 140px;
     height: 100%;*/
-    
+
     position: absolute;
-    top: 8%;
-    left: 10%;
+    top: 2%;
+    left: 9%;
     z-index: 1;
-    
+
 }
 
-.prd-img{
-    text-align: center;
+.prd-vis img{
+    width: 140px;
+}
+
+.prd-img {
+    
 }
 
 .prd-img img {
     max-width: 100%;
 }
 
-.prd-text h1{
+.prd-text h1 {
     font-weight: bold;
 }
-.prd-text p{
+
+.prd-text p {
     max-width: 85%;
+}
+
+#prd_end {
+    padding-right: 5%;
+    padding-bottom: 3%;
+}
+
+#scroll-top {
+
+}
+
+#scroll-top::after {
+    height: 100vh;
+    content: '';
+    background-image: url(../img/arrow.png);
+    width: 67px;
+    height: 67px;
+
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#scroll-top:hover {
+    border: 1.5px solid #E3332B;
+    background: #E3332B;
+
+}
+
+#scroll-top:hover::after {
+    content: 'UP !';
+    color: #fff;
+    background-image: none;
+    width: 100px;
+    height: 10px;
+
+    top: 45%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+/* footer */
+
+footer {
+    color: #fff;
+}
+
+#logoBlock .container,
+#footerList .container{
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+#logoBlock .container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#footerList .container{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+
+#logoBlock {
+    background: #E3332B;
+}
+
+#logoBlock .LOGO{
+    font-size: 2.38rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+
+}
+#logoBlock .address{
+    padding-top: 10%;
+    padding-bottom: 4%;
+    font-size: 0.714rem;
+}
+#logoBlock .address::after{
+    content: '';
+    width: 28px;
+    height: 18px;
+    background-image: url(../img/footerArrow.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#logoBlock p span{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+#footerList {
+    background: #050A2D;
+}
+
+.listTitle{
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+
+.flBlock{
+    height: 230px;
+}
+
+.flBlock ul li{
+    margin-bottom: 8px;
 }
