@@ -1,8 +1,11 @@
 $(document).ready(function () {
-    
+
     document.querySelector('#scroll-down').addEventListener("click", scrollDown);
-    document.querySelector('#scroll-top').addEventListener("click", scrollUP);
-    
+    document.querySelector('#scroll-top').onclick = function (e) {
+        e.preventDefault();
+        scrollUP();
+    }
+
     $(window).on('scroll', function () {
         //
         let fastElement = $('.scroll_fast');
@@ -32,7 +35,7 @@ $(document).ready(function () {
         // ----------------------------------------
         let windowTop = $(window).scrollTop();
         console.log('windowTop: ' + windowTop);
-        let el = ['.prd-title-block .block-title', 
+        let el = ['.prd-title-block .block-title',
                   '.prd-content-block .prd-img img',
                   '.prd-content-block .prd-text h1',
                   '.prd-content-block .prd-text p:nth-child(2)',
@@ -54,19 +57,24 @@ $(document).ready(function () {
 
 
 function scrollDown(e) {
-  e.preventDefault();
-  const href = this.getAttribute('href');
-  const offsetTop = document.querySelector(href).offsetTop;
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const offsetTop = document.querySelector(href).offsetTop;
 
-  scroll({
-    top: offsetTop,
-    behavior: "smooth"
-  });
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
 }
 
 function scrollUP() {
-  document.documentElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
+    /*document.documentElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })*/
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / 10);
+    }
 }

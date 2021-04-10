@@ -34,6 +34,15 @@ ul{
     height: 100vh;
 }
 
+/* safari style */
+a[type="button"] {
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
 /* header */
 
 header .container-fluid {
