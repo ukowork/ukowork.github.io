@@ -1,10 +1,10 @@
-html,body
-{
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -17,12 +17,12 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-ul{
+ul {
     padding: 0;
     list-style-type: none;
 }
@@ -35,13 +35,13 @@ ul{
 }
 
 /* safari style */
-a[type="button"] {
+/*a[type="button"] {
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-}
+}*/
 
 /* header */
 
@@ -152,15 +152,15 @@ header .container-fluid {
     letter-spacing: 1px;
 }
 
-.scrollBtnStyle{
+.scrollBtnStyle {
     border: 1.5px solid #E3332B;
     text-align: center;
     border-radius: 100%;
     text-decoration: none;
-    
+
     width: 230px;
     height: 230px;
-    
+
     position: relative;
 }
 
@@ -250,13 +250,11 @@ header .container-fluid {
 
 }
 
-.prd-vis img{
+.prd-vis img {
     width: 140px;
 }
 
-.prd-img {
-    
-}
+.prd-img {}
 
 .prd-img img {
     max-width: 100%;
@@ -275,9 +273,7 @@ header .container-fluid {
     padding-bottom: 3%;
 }
 
-#scroll-top {
-
-}
+#scroll-top {}
 
 #scroll-top::after {
     height: 100vh;
@@ -328,17 +324,17 @@ footer {
 }
 
 #logoBlock .container,
-#footerList .container{
+#footerList .container {
     padding-top: 8%;
     padding-bottom: 8%;
 }
 
-#logoBlock .container{
+#logoBlock .container {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-#footerList .container{
+#footerList .container {
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -348,19 +344,21 @@ footer {
     background: #E3332B;
 }
 
-#logoBlock .LOGO{
+#logoBlock .LOGO {
     font-size: 2.38rem;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.005em;
 
 }
-#logoBlock .address{
+
+#logoBlock .address {
     padding-top: 10%;
     padding-bottom: 4%;
     font-size: 1.2rem;
 }
-#logoBlock .address::after{
+
+#logoBlock .address::after {
     content: '';
     width: 28px;
     height: 18px;
@@ -370,7 +368,7 @@ footer {
     margin-left: 20px;
 }
 
-#logoBlock p span{
+#logoBlock p span {
     display: inline-block;
     padding-right: 15px;
 }
@@ -379,21 +377,21 @@ footer {
     background: #050A2D;
 }
 
-.listTitle{
+.listTitle {
     display: block;
     font-size: 1.3rem;
     padding-bottom: 15px;
 }
 
-.flBlock{
+.flBlock {
     height: 230px;
 }
 
-.flBlock ul li{
+.flBlock ul li {
     margin-bottom: 8px;
 }
 
-.footext{
+.footext {
     display: block;
     letter-spacing: 2px;
 }

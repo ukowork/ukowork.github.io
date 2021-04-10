@@ -1,10 +1,7 @@
 $(document).ready(function () {
-
     document.querySelector('#scroll-down').addEventListener("click", scrollDown);
-    document.querySelector('#scroll-top').onclick = function (e) {
-        e.preventDefault();
-        scrollUP();
-    }
+    document.querySelector('#scroll-top').addEventListener("click", scrollUP);
+    //
 
     $(window).on('scroll', function () {
         //
@@ -32,9 +29,10 @@ $(document).ready(function () {
         //
         // ----------------------------------------
         // 滾到相應處才撥放動畫
-        // ----------------------------------------
+
         let windowTop = $(window).scrollTop();
         console.log('windowTop: ' + windowTop);
+        //
         let el = ['.prd-title-block .block-title',
                   '.prd-content-block .prd-img img',
                   '.prd-content-block .prd-text h1',
@@ -60,7 +58,7 @@ function scrollDown(e) {
     e.preventDefault();
     const href = this.getAttribute('href');
     const offsetTop = document.querySelector(href).offsetTop;
-
+    //
     scroll({
         top: offsetTop,
         behavior: "smooth"
@@ -68,13 +66,8 @@ function scrollDown(e) {
 }
 
 function scrollUP() {
-    /*document.documentElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    })*/
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 10);
-    }
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
 }
