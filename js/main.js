@@ -23,7 +23,7 @@ $(document).ready(function () {
                 // 還不太明白為什麼要這樣算
                 // 動態計算 transform 3d 的 y 位移 並指定給 dom
                 currentElement.css({
-                    transform: 'translate3d(0,' + scrolled * -0.55 + 'px, 0)'
+                    transform: 'translate3d(0,' + scrolled * -0.15 + 'px, 0)'
                 });
             }
         });
@@ -41,13 +41,21 @@ $(document).ready(function () {
                   '.prd-content-block .prd-text p:nth-child(3)',
                   '.prd-content-block button'];
         //
-        if (windowTop >= 200) {
+        if (windowTop >= 800) {
             for (let i = 0; i < el.length; i++) {
+                document.querySelector('#prd_1 ' + el[i]).classList.remove('none-opacity');
                 document.querySelector('#prd_1 ' + el[i]).classList.add('fade-up-top');
             }
+        } else if (windowTop < 800) {
+            for (let i = 0; i < el.length; i++) {
+                document.querySelector('#prd_1 ' + el[i]).classList.add('none-opacity');
+                document.querySelector('#prd_2 ' + el[i]).classList.add('none-opacity');
+            }
         }
+        //
         if (windowTop >= 1300) {
             for (let i = 0; i < el.length; i++) {
+                document.querySelector('#prd_2 ' + el[i]).classList.remove('none-opacity');
                 document.querySelector('#prd_2 ' + el[i]).classList.add('fade-up-top');
             }
         }

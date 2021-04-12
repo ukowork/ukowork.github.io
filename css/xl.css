@@ -4,7 +4,7 @@
 
 
 #mainVision {
-    padding-top: 11%;
+    padding-top: 0%;
 }
 
 #mVcontent {
@@ -35,9 +35,10 @@
     left: 9%;
 }
 
-.prd-text{
+.prd-text {
     padding-left: 4%;
 }
+
 .prd-text p {
     max-width: 100%;
 }
@@ -47,6 +48,6 @@
     left: 4%;
 }
 
-.prd-vis img{
+.prd-vis img {
     width: 120px;
 }
