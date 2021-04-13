@@ -23,7 +23,7 @@ $(document).ready(function () {
                 // 還不太明白為什麼要這樣算
                 // 動態計算 transform 3d 的 y 位移 並指定給 dom
                 currentElement.css({
-                    transform: 'translate3d(0,' + scrolled * -0.15 + 'px, 0)'
+                    transform: 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'
                 });
             }
         });
