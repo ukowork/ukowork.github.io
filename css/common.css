@@ -63,6 +63,7 @@ ul {
 header .container-fluid {
     padding-right: 3%;
     padding-left: 3%;
+    position: relative;
 }
 
 .logo-style {
