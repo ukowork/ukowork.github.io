@@ -1,7 +1,7 @@
 /*@import url(normalize.css);*/
 @import url(animate.css);
 @import url(common.css);
-@import url(xxl.css) only screen and (min-width:1440px);
+@import url(xxl.css) only screen and (min-width:1439px);
 @import url(xl.css) only screen and (max-width:1299px);
 @import url(lg.css) only screen and (max-width:1199px);
 @import url(xs.css) only screen and (max-width:767px);
