@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+.owl-dots {
+	top: 90%;
+}
+}
+
+@media (max-width: 989px) {
+}
+
+@media (max-width: 767px) {
+#mobile-header {
+	margin: 5% 0% 0% 0%;
+}
+.owl-dots {
+	top: 85%;
+}
+.news-row {
+	margin: 0px 0px;
+}
+.news-img {
+	margin: 15px 0px;
+}
+}
+
+@media (max-width: 662px) {
+#index-company, #index-news {
+	padding: 5% 3%;
+}
+}
+
+@media (max-width: 544px) {
+.bar {
+	display: block;
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	margin: 5px auto;
+}
+#mobile-header {
+	margin: 8% 0% 0% 0%;
+}
+.owl-prev {
+	left: 3%;
+	top: 50%;
+}
+.owl-next {
+	right: 3%;
+	top: 50%;
+}
+}
+
+@media (max-width: 430px) {
+#mobile-header {
+	margin: 10% 0% 0% 0%;
+}
+.navbar-brand img {
+	height: 60px;
+}
+}

@@ -1,0 +1,53 @@
+.col-half-offset {
+    margin-left: -0.833333%;
+}
+
+
+#mainVision {
+    padding-top: 0%;
+}
+
+#mVcontent {
+    background-size: 55%;
+    background-position: top 7vh right 1vw;
+}
+
+#mVText {
+    max-width: 71%;
+    margin-left: 5%;
+}
+
+#scroll-down {
+    margin-top: 8%;
+    padding-top: 4%;
+}
+
+#prd_1 .prd-block {
+    padding: 25% 9% 15% 9%;
+}
+
+#prd_2 .prd-block {
+    padding: 25% 9% 10% 9%;
+}
+
+.block-title {
+    top: 17%;
+    left: 9%;
+}
+
+.prd-text {
+    padding-left: 4%;
+}
+
+.prd-text p {
+    max-width: 100%;
+}
+
+.prd-vis {
+    top: 2%;
+    left: 4%;
+}
+
+.prd-vis img {
+    width: 120px;
+}
