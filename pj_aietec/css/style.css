@@ -115,26 +115,36 @@ h1 {
 /*----------------------------------*/
 #hl {
 	height: 5px;
+	background: #026eb9;
+}
+#lang {
 	background: #253882;
+	padding: 4px 0px;
 }
-header{
-	background-color: #171c65;
+#lang ul li {
+	float: right;
 }
-
-#navbar-row {
+#lang ul li a {
+	color: #fff;
+	display: block;
+}
+#lang ul li:nth-child(2) a:after {
+	content: "｜";
+	color: #fff;
+}
+#logo-row {
 	padding: 5px 15px;
-	text-align: center;
 }
 nav#idxheadrow {
+	text-align: center;
 	color: #fff !important;
-	background-color: #171c65;
+	background-color: #fff;
 }
 #main-nav {
-	padding: 1% 0%;
-	display: inline-block;
+	padding: 2.5% 0%;
 }
 .nav-link {
-	color: #fff;
+	color: #006DB6;
 	padding: 8px 5px;
 	font-size:16px;
 }
@@ -143,7 +153,7 @@ nav#idxheadrow {
 	color: #9A9A9A;
 }
 .affix-top {
-    top: -50px;
+    top: -23px;
 }
 .affix {
 	position: fixed;
@@ -154,25 +164,18 @@ nav#idxheadrow {
 	-webkit-transition: all 0.5s ease-out 0s;
 	-moz-transition: all 0.5s ease-out 0s;
 }
-.affix-top #logo{
-	text-align:center;
-}
-.affix #logo{
-	float:left;
-}
-.affix-top #logo img {
+a.navbar-brand img {
 	height: 90px;
 }
-.affix #logo img {
+.affix a.navbar-brand img {
 	height: 70px;
 }
 #idxheadrow.affix #main-nav {
 	border: none;
-	padding:1.5% 0%;
-	
+	padding: 1.5% 0%;
 }
 #idxheadrow.affix #main-nav .nav-item a{
-	font-size:15px;
+	font-size:14px;
 }
 
 /*-------------------------*/
@@ -190,7 +193,57 @@ nav#idxheadrow {
 .banner-icon:hover {
 	background: rgba(37,56,130,1);
 }
-.owl-prev, .owl-next {
+.owl-nav button {
+	position: absolute;
+	top: 50%;
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	transition: all 0.3s ease-in-out;
+  }
+  .owl-nav button.owl-prev {
+	left: 0;
+  }
+  .owl-nav button.owl-next {
+	right: 0;
+  }
+  
+  .owl-dots {
+	position: absolute;
+	text-align: center;
+	top: 90%;
+	left: 0;
+	right: 0;
+  }
+  .owl-dots button.owl-dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #ccc;
+	margin: 0 3px;
+  }
+  .owl-dots button.owl-dot.active {
+	background-color: #000;
+  }
+  .owl-dots button.owl-dot:focus {
+	outline: none;
+  }
+  .owl-nav button {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: rgba(255, 255, 255, 0.38) !important;
+  }
+  span {
+	  font-size: 70px;    
+	  position: relative;
+	  top: -5px;
+  }
+  .owl-nav button:focus {
+	  outline: none;
+  }
+/* .owl-prev, .owl-next {
 	position: absolute;
 }
 .owl-prev {
@@ -223,6 +276,55 @@ nav#idxheadrow {
 .owl-carousel .owl-controls .owl-dot.active span {
 	opacity: 1;
 }
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+span {
+    font-size: 70px;    
+    position: relative;
+    top: -5px;
+}
+.owl-nav button:focus {
+    outline: none;
+} */
+
 /*-------------------------*/
 #mobile-header {
 	margin: 3% 0% 0% 0%;
@@ -232,14 +334,14 @@ nav#idxheadrow {
 	display: block;
 	height: 4px;
 	width: 40px;
-	background: #fff;
+	background: #2D2C2C;
 	margin: 8px auto;
 }
 /*-------------------------*/
 .gb {
 	color: #fff;
-	border: 1px solid #171c65;
-	background: #171c65;
+	border: 1px solid #006DB6;
+	background: #006DB6;
 	text-align: center;
 	text-decoration: none;
 	/*width: 100px;
@@ -251,8 +353,8 @@ nav#idxheadrow {
 }
 .gb:hover, .gb:active {
 	background-color: #fff;
-	border: 1px solid #3047a0;
-	color: #3047a0;
+	border: 1px solid #006DB6;
+	color: #006DB6;
 	text-decoration: none;
 }
 /*================BUTTON===================*/
@@ -398,17 +500,17 @@ nav#idxheadrow {
 #index-company .pg-tit {
 	margin-bottom: 15px;
 }
-#index-news .pg-tit {
+#index-prd .pg-tit {
 	margin-bottom: 45px;
 }
-#index-company, #index-news {
+#index-company, #index-prd {
 	padding: 2% 0% 4% 0%;
 }
 #index-company {
 	color: #fff;
 	background: #de823e;
 }
-#index-news {
+#index-prd {
 	background: url(../images/idx-c-bg.png) fixed top center;
 }
 #idx-content .news-img {

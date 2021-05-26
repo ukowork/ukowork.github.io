@@ -13,6 +13,9 @@
 .owl-dots {
 	top: 90%;
 }
+#all_menus_block{
+	width: 100%;
+}
 }
 
 @media (max-width: 989px) {
@@ -34,7 +37,7 @@
 }
 
 @media (max-width: 662px) {
-#index-company, #index-news {
+#index-company, #index-prd {
 	padding: 5% 3%;
 }
 }

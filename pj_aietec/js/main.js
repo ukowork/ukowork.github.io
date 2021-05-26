@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 22.579295,
-		longitude = 120.424958,
+	var latitude = 24.997929,
+		longitude = 121.32377,
 		map_zoom = 15;
 
 	//google map custom marker icon - .png fallback for IE11
@@ -62,8 +62,8 @@ jQuery(document).ready(function($){
   	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 	
 	
-	 var contentString = '<div class="mapt">總公司</div>'+'高雄市大寮區(大發工業區)莒光二街20號<br>'+
-	 'TEL : 886-7-7877690／FAX : 886-7-7870942';
+	 var contentString = '<div class="mapt">總公司</div>'+'桃園市桃園區成功路三段1號<br>'+
+	 '星期一至星期五 09:00 - 18:00 <br> TEL : +886-937-176-293 <br> MAIL : stacy.yang@aie-tec.com';
 
   var infowindow = new google.maps.InfoWindow({
     content: contentString
