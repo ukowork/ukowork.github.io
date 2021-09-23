@@ -22,7 +22,7 @@
     <nav id="idxheadrow" class="" data-toggle="affix">
       <div id="logo-row" class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"><img src="images/logoimg.png" alt="" /></a>
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" /></a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#all_menus"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <div class="listicon"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
@@ -31,14 +31,14 @@
           <!----------------------->
           <div class="collapse navbar-collapse" id="all_menus">
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -55,8 +55,9 @@
   <div id="mainbanner">
     <div class="row d-none d-sm-block"> <!-- Hidden only on xs -->
       <div class="col-md-12">
-        <div class="owl-carousel">
+        <div class="owl-carousel banner-owl">
           <div class="item"><img src="images/banner_a-01.png" alt="" /></div>
+          <div class="item"><img src="images/banner_a-02.png" alt="" /></div>
           <div class="item"><img src="images/banner_a-03.png" alt="" /></div>
         </div>
       </div>
@@ -68,6 +69,9 @@
             <img src="images/banner_a-xs-01.png" alt="" />
           </div>
           <div class="item">
+            <img src="images/banner_a-xs-02.png" alt="" />
+          </div>
+          <div class="item">
             <img src="images/banner_a-xs-03.png" alt="" />
           </div>
         </div>
@@ -75,124 +79,65 @@
     </div>
   </div>
   <!------------------------------------->
-  <div id="idx-content">
-    <div id="index-company" class="row tc">
+  <div id="index-content">
+    <div id="index-company">
       <div class="container">
-        <img src="images/about.png" alt="" />
-        <br /><br />
-        <h1 class="pg-tit">ABOUT US</h1>
-        安智聯科技-已為多家領先半導體、平面顯示器、PCB和電子製造業提供即時、智能製造解決方案，為客戶降低成本，提高品質並提高產量。提供一站式的工業4.0解決方案，包含遠程控制系統、製造流程自動化機器人(RPA)、AiOT、Big
-        Data
-        分析平台。自主研發軟硬體及最新的人工智能，以即時檢測、分析、預測和處理的全方位流程，協助企業解決製造出現的問題，從而幫助企業充分發揮工業4.0的潛力。
-        <br /><br /><a href="#" class="gb">Read More</a>
+        <div class="row align-items-center">
+          <div class="col-8" style="line-height: 2rem;">
+            <h1 class="pg-tit">ABOUT US</h1>
+        安智聯科技-已為多家領先半導體、平面顯示器、PCB和電子製造業提供即時、智能製造解決方案，為客戶降成本，提高品質並提高產量。提供一站式的工業4.0解決方案，包含遠程控制系統、製造流程自動化機器人(RPA)、AIoT、BIG DATA 分析平台，自主研發軟體及最新的人工智能，以即時檢測、分析、預測和處理的全方位流程，協助企業解決製造出現的問題，從而幫助企業充分發揮工業4.0的潛力。
+        <br>
+          </div>
+          <div class="col-4">
+            <img src="images/indeximg.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
-    <!--------------------------------->
     <div id="index-prd">
       <div class="container">
-        <h1 class="pg-tit tc">Welcome to the Fab 4.0</h1>
-        <!--------------------------------------------->
-        <div class="row">
-          <!---------------------1----------------------->
-          <div class="col-12 col-sm-12 col-md-4">
-            <div class="news-row">
-              <div class="news-img">
-                <img src="images/NEWS-01.png" alt="" />
-              </div>
-              <br />
-              <div class="news-content">
-                <div class="news-txt">
-                  <h4>Remove control System (RCM)</h4>
-                  機台連線、產線自動化、提高人機比<br />
-                  生產指揮中心、無人工廠
-                </div>
-                <a href="#" class="idxmore idxbtn">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!---------------------2----------------------->
-          <div class="col-12 col-sm-12 col-md-4">
-            <div class="news-row">
-              <div class="news-img">
-                <img src="images/NEWS-02.png" alt="" />
-              </div>
-              <br />
-              <div class="news-content">
-                <div class="news-txt">
-                  <h4>Robotic Process Automation (AI-RPA)</h4>
-                  避免人為錯誤、24小時不間斷作業<br />跨系統整合、提高作業效率
-                </div>
-                <a href="#" class="idxmore idxbtn">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!---------------------3----------------------->
-          <div class="col-12 col-sm-12 col-md-4">
-            <div class="news-row">
-              <div class="news-img">
-                <img src="images/NEWS-03.png" alt="" />
-              </div>
-              <br />
-              <div class="news-content">
-                <div class="news-txt">
-                  <h4>Automatic Defect Classification (AiDC)</h4>
-                  降低人力超過80%、提高檢測效率<br />提供高精準的缺陷分類結果
-                </div>
-                <a href="#" class="idxmore idxbtn">Read More</a>
-              </div>
-            </div>
-          </div>
-          <!--------------------------------------------->
-        </div>
-        <!--------------------------------------------->
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-12 col-md-4">
-            <div class="news-row">
-              <div class="news-img">
-                <img src="images/NEWS-04.png" alt="" />
-              </div>
-              <br />
-              <div class="news-content">
-                <div class="news-txt">
-                  <h4>AIoT 智聯網</h4>
-                  感知器、邊緣運算裝置<br>可視化全面掌控、有效預防宕機、即時監控
-                </div>
-                <a href="#" class="idxmore idxbtn">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-4">
-            <div class="news-row">
-              <div class="news-img">
-                <img src="images/NEWS-05.png" alt="" />
-              </div>
-              <br />
-              <div class="news-content">
-                <div class="news-txt">
-                  <h4>AIE-Analytic Platform</h4>
-                  讓資料不只是資料、適用於不同產業<br>快速聚焦、精準決策
-                </div>
-                <a href="#" class="idxmore idxbtn">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--------------------------------------------->
+        <h1 class="pg-tit">Customer</h1>
+        <div class="owl-carousel owl-theme prd-owl">
+          <div class="item"><img src="images/customer/cus-01.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-02.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-03.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-04.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-05.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-06.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-07.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-08.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-09.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-10.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-11.png" alt="" /></div>
+          <div class="item"><img src="images/customer/cus-12.png" alt="" /></div>
+      </div>
       </div>
     </div>
   </div>
   <!------------------------------------->
-  <section id="cd-google-map">
+  <!-- <section id="cd-google-map">
     <div id="google-container"></div>
     <div id="cd-zoom-in"></div>
     <div id="cd-zoom-out"></div>
-  </section>
+  </section> -->
   <!------------------------------------->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          
+      <div class="row pb-4">
+        <div class="col-4">
+          <section id="cd-google-map">
+            <div id="google-container"></div>
+            <div id="cd-zoom-in"></div>
+            <div id="cd-zoom-out"></div>
+          </section>
+        </div>
+        <div class="col-4">
+          <ul class="contact">
+            <li class="name">安智聯科技股份有限公司</li>
+            <li>星期一～星期五 09:00 - 18:00</li>
+            <li>0937-176-293</li>
+            <li>stacy.yang@aie-tec.com</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -205,10 +150,10 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
     ></script>
     <script src="js/bootstrap.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"

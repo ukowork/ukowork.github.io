@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
   	map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 	
 	
-	 var contentString = '<div class="mapt">總公司</div>'+'桃園市桃園區成功路三段1號<br>'+
+	 var contentString = '<div class="mapt">安智聯</div>'+'桃園市桃園區成功路三段1號<br>'+
 	 '星期一至星期五 09:00 - 18:00 <br> TEL : +886-937-176-293 <br> MAIL : stacy.yang@aie-tec.com';
 
   var infowindow = new google.maps.InfoWindow({
@@ -79,7 +79,7 @@ jQuery(document).ready(function($){
         google.maps.event.trigger(map, "resize");
         map.setCenter(center);
     });
-	
+	infowindow.open(map, marker); // 預設顯示
 });
 
 
